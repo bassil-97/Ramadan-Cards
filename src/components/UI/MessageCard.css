@@ -1,0 +1,28 @@
+.message-card {
+  width: 30%;
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 1rem 3rem;
+  border-radius: 6px;
+  background-color: #fbfcfc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.26);
+  font-family: "Tajawal", sans-serif;
+}
+
+.message-card p {
+  text-align: center;
+  font-family: "Tajawal", sans-serif;
+}
+
+.message-card button:focus {
+  box-shadow: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .message-card {
+    width: 100%;
+  }
+}

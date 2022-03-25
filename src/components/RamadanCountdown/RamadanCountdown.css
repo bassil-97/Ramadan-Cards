@@ -1,0 +1,54 @@
+.ramadan-countdown__wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-top: 150px;
+  background-color: white !important;
+  background: url("../../assets/wave.svg") bottom no-repeat;
+}
+
+.timer__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.timer-item {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 15px;
+  background-color: #f7f9f9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer-item h2 {
+  font-weight: bold;
+  font-size: 4rem;
+  color: #249bb6;
+}
+
+.time-left__title {
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 992px) {
+  .ramadan-countdown__wrapper {
+    padding: 70px;
+    border-top: 1px solid lightgray;
+  }
+
+  .timer__wrapper {
+    margin-bottom: 50px;
+  }
+}

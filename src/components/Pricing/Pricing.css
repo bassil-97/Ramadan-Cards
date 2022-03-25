@@ -1,0 +1,18 @@
+.pricing__wrapper {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  background-color: rgb(245, 245, 245);
+  background: url("../../assets/Ramadan\ Gathering.png") top right no-repeat;
+  background-size: 700px 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .pricing__wrapper {
+    background: none;
+    padding: 20px;
+  }
+}

@@ -1,0 +1,23 @@
+.start-btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  background-color: #249bb6;
+  color: white;
+  border: none;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.start-btn:hover {
+  background-color: #29b5d4;
+  transition-duration: 0.5s;
+}
+
+.start-btn:focus {
+  outline: none;
+}
+
+.start-btn a {
+  color: white;
+  text-decoration: none;
+}

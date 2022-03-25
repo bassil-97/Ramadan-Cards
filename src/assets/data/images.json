@@ -1,0 +1,27 @@
+[
+    {
+        "id": "1",
+        "name": "Ramadan Theme",
+        "source": "themes/1789.jpg"
+    },
+    {
+        "id": "2",
+        "name": "Dark Theme",
+        "source": "themes/24971.jpg"
+    },
+    {
+        "id": "3",
+        "name": "Blue Theme",
+        "source": "themes/8334.jpg"
+    },
+    {
+        "id": "4",
+        "name": "Brown Theme",
+        "source": "themes/dark-bg.jpg"
+    },
+    {
+        "id": "5",
+        "name": "Splash Theme",
+        "source": "themes/ramadan-bg.jpg"
+    }
+]
