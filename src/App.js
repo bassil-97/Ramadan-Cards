@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/home" exact element={homeRoutes} />
+        <Route path="/" exact element={homeRoutes} />
         <Route path="/card" element={<CardDisplay />} />
         <Route path="*" element={<NotFound />}></Route>
       </Routes>

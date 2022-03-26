@@ -8,7 +8,7 @@ export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light">
       <div className="container-fluid">
-        <NavLink className="navbar-brand" to="/home">
+        <NavLink className="navbar-brand" to="/">
           Ramadan Cards
         </NavLink>
         <button
