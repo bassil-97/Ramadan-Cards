@@ -105,7 +105,7 @@ export default function CardTemplate() {
 
       <div className="divider"></div>
 
-      <div className="row w-100 d-flex align-items-center justify-content-center">
+      <div className="row d-flex align-items-center justify-content-center">
         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 options-col">
           <SectionTitle>theme options</SectionTitle>
           <div className="form-group">
@@ -146,7 +146,7 @@ export default function CardTemplate() {
           </div>
         </div>
       </div>
-      <div className="row w-100 mt-4">
+      <div className="row mt-4">
         <div className="col-lg-12">
           <input
             type="text"
@@ -156,17 +156,17 @@ export default function CardTemplate() {
           />
         </div>
       </div>
-      <div className="row w-100 mt-5">
+      <div className="row mt-5">
         <div className="col-lg-12">
           <MessagesContainer setSelectedMessage={setSelectedMessage} />
         </div>
       </div>
-      <div className="row w-100 mt-5">
+      <div className="row mt-5">
         <div className="col-lg-12">
           <CustomMessage customMessageHandler={setCustomMessage} />
         </div>
       </div>
-      <div className="mt-5">
+      <div className="mt-5 mb-3 center">
         <Button onClick={doCapture}>Download My Card</Button>
       </div>
     </React.Fragment>
