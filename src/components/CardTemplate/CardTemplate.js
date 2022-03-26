@@ -86,7 +86,7 @@ export default function CardTemplate() {
           <div className="col-md-4">
             <img
               src={theme}
-              className="img-fluid rounded-start"
+              className="img-fluid rounded-start h-100"
               alt="card image"
             />
           </div>

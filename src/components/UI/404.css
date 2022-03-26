@@ -1,0 +1,21 @@
+.not-found__wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #f0f3f4;
+  background-image: url("../../assets/404.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-position-y: 105%;
+}
+
+.not-found__wrapper .container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
