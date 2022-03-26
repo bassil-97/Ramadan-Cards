@@ -17,10 +17,7 @@ export default function NotFound() {
           loop
           autoplay
         ></lottie-player>
-        <button
-          onClick={() => history("/home")}
-          className="btn btn-outline-secondary"
-        >
+        <button onClick={() => history("/home")} className="btn btn-light">
           Back to home
         </button>
       </div>

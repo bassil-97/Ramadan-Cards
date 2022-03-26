@@ -19,3 +19,14 @@
   flex-direction: column;
   margin-top: 50px;
 }
+
+@media screen and (max-width: 992px) {
+  .not-found__wrapper {
+    background-size: auto 300px;
+    background-position-y: 110%;
+  }
+
+  .not-found__wrapper .container {
+    margin-top: 0px;
+  }
+}

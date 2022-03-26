@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-color: #f4f6f7;
 }
 
 @media screen and (max-width: 992px) {
