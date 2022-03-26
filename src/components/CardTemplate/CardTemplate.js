@@ -43,7 +43,6 @@ export default function CardTemplate() {
 
   const doCapture = () => {
     html2canvas(document.getElementById("card")).then((canvas) => {
-      console.log(canvas.toDataURL("image/jpeg", 0.9));
       simulateDownloadImageClick(
         canvas.toDataURL("image/jpeg", 0.9),
         "card.png"
@@ -86,7 +85,7 @@ export default function CardTemplate() {
           <div className="col-md-4">
             <img
               src={theme}
-              className="img-fluid rounded-start h-100"
+              className="img-fluid rounded-start card-img"
               alt="card image"
             />
           </div>
