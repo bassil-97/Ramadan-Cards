@@ -5,7 +5,7 @@ import { useCountdown } from "../hooks/countdown-hook";
 import "./RamadanCountdown.css";
 
 export default function RamadanCountdown() {
-  const [days, hours, minutes, seconds] = useCountdown("Apr 4, 2022 00:00:00");
+  const [days, hours, minutes, seconds] = useCountdown("Mar 23, 2023 00:00:00");
 
   return (
     <div className="ramadan-countdown__wrapper">
