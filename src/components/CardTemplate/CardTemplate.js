@@ -86,7 +86,7 @@ export default function CardTemplate() {
             <img
               src={theme}
               className="img-fluid rounded-start card-img"
-              alt="card image"
+              alt="card"
             />
           </div>
           <div className="col-md-8">
@@ -112,7 +112,7 @@ export default function CardTemplate() {
             <h6>select theme</h6>
             <div className="select-menu mt-3">
               <select
-                className="form-select w-100"
+                className="form-select w-50"
                 aria-label="Default select example"
                 onChange={selectThemeHandler}
               >
@@ -122,6 +122,8 @@ export default function CardTemplate() {
                   </option>
                 ))}
               </select>
+              <h5>or</h5>
+              <input type="file" />
             </div>
           </div>
         </div>

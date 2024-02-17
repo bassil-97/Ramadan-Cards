@@ -9,7 +9,7 @@ export default function PricingCard() {
       <h5>Basic</h5>
       <p>The perfect way to get started and get used to our tool.</p>
       <h1>
-        $1 <sub className="sub-amout">/ per card</sub>
+        $0 <sub className="sub-amout">/ per card</sub>
       </h1>
       <div className="divider"></div>
       <button className="btn btn-light w-100 get-started-btn">

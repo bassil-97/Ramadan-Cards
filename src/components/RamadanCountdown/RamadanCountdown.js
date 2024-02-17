@@ -5,7 +5,7 @@ import { useCountdown } from "../hooks/countdown-hook";
 import "./RamadanCountdown.css";
 
 export default function RamadanCountdown() {
-  const [days, hours, minutes, seconds] = useCountdown("Mar 23, 2023 00:00:00");
+  const [days, hours, minutes, seconds] = useCountdown("Mar 11, 2024 00:00:00");
 
   return (
     <div className="ramadan-countdown__wrapper">
@@ -20,7 +20,7 @@ export default function RamadanCountdown() {
             autoplay
           ></lottie-player>
         </div> */}
-        <h1 className="time-left__title">Time left until ramadan</h1>
+        <h1 className="time-left__title">Time left until ramadan 2024</h1>
         <div className="timer__wrapper">
           <TimerItem time={days} title={"days"} />
           <TimerItem time={hours} title={"hours"} />
