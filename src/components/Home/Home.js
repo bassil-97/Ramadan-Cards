@@ -7,6 +7,7 @@ import Pricing from "../Pricing/Pricing";
 
 import Logo from "../../assets/arbfonts-islamic-arabic-calligraphy46-2.png";
 import Coffie from "../../assets/coffee.png";
+import Gaza from "../../assets/gaza.png";
 
 export default function Home() {
   const { t } = useTranslation();
@@ -23,7 +24,7 @@ export default function Home() {
         />
         <p className="home__text">{t("home_main_text")}</p>
         <div className="home__image-wrapper center">
-          <img src={Coffie} alt="Ramadan Kareem"></img>
+          <img src={Gaza} alt="Ramadan Kareem"></img>
         </div>
       </div>
       <About />
