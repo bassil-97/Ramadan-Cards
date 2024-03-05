@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 import "./MessagesContainer.css";
 import MessageCard from "../UI/MessageCard";
@@ -7,6 +8,8 @@ import SectionTitle from "../UI/SectionTitle";
 import messages from "../../assets/data/messages.json";
 
 export default function MessagesContainer({ setSelectedMessage }) {
+  const { t } = useTranslation();
+
   const selectMessageHandler = (msgId) => {
     let message = messages.filter(function (el) {
       return el.id === msgId;
@@ -17,7 +20,7 @@ export default function MessagesContainer({ setSelectedMessage }) {
 
   return (
     <React.Fragment>
-      <SectionTitle>Select Message</SectionTitle>
+      <SectionTitle>{t("select_message_title")}</SectionTitle>
       <div className="messages-container">
         {messages &&
           messages.map((msg) => (

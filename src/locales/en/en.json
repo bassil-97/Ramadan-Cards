@@ -1,0 +1,37 @@
+{
+    "app_title": "Ramadan Cards",
+    "navbar_home": "Home",
+
+    "home_main_text": "Happy fasting to all Muslim fellow around the world. May this Ramadan bring endlessly moments of joy and we are always in the protection of ALLAH.",
+    
+    "aboutUs_title": "About Us",
+    "aboutUs_text": "Here at Ramadan Cards, you can congratulate your family, friends, and everyone you love on the occasion of the arrival of the blessed month of Ramadan by creating a greeting card using our templates with ease.",
+    "aboutUs_option_1": "Select Your Template",
+    "aboutUs_option_2": "Add Your Greeting Message",
+    "aboutUs_option_3": "Download Your Card",
+
+    "create_card_text": "Create Card",
+
+    "prices_title": "Our Prices",
+    "prices_card_title": "Basic",
+    "prices_card_text": "The perfect way to get started and get used to our tool.",
+    "prices_card_subtext": "per card",
+    "prices_card_btn": "Get Started",
+
+    "coutdown_text": "Time Left Until Ramadan 2024",
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds",
+
+    "footer_text": "All rights reserved.",
+
+    "theme_options_title": "Theme Options",
+    "themes_list_title": "Select Theme",
+    "manuscript_options_title": "Manuscript Options",
+    "manuscript_list_title": "Select Manuscript",
+    "select_message_title": "Select Message",
+    "custom_message_title": "Or Enter Your Message",
+    "message_label": "Your Message",
+    "download_card": "Download My Card"
+}

@@ -1,0 +1,37 @@
+{
+    "app_title": "Ramadan Cards",
+    "navbar_home": "الرئيسية",
+
+    "home_main_text": "صيام سعيد لجميع الإخوة المسلمين في جميع أنحاء العالم. أتمنى أن يجلب شهر رمضان لحظات لا نهاية لها من الفرح ونحن دائمًا في حماية الله.",
+    
+    "aboutUs_title": "من نحن",
+    "aboutUs_text": "هنا في بطاقات رمضان، يمكنك تهنئة عائلتك وأصدقائك وكل من تحب بمناسبة قدوم شهر رمضان المبارك من خلال إنشاء بطاقة تهنئة باستخدام قوالبنا بكل سهولة.",
+    "aboutUs_option_1": "اختار القالب المناسب لك",
+    "aboutUs_option_2": "أضف رسالتك الخاصة",
+    "aboutUs_option_3": "قم بتنزيل بطاقة التهنئة الخاصة بك",
+
+    "create_card_text": "أنشىء بطاقة",
+
+    "prices_title": "أسعارنا",
+    "prices_card_title": "الأساسية",
+    "prices_card_text": "الطريقة المثالية للبدء والتعود على أداتنا.",
+    "prices_card_subtext": "للبطاقة الواحدة",
+    "prices_card_btn": "ابدأ",
+
+    "coutdown_text": "الوقت المتبقي لرمضان 2024",
+    "days": "أيام",
+    "hours": "ساعات",
+    "minutes": "دقائق",
+    "seconds": "ثوان",
+
+    "footer_text": "جميع الحقوق محفوظة",
+
+    "theme_options_title": "خيارات القالب",
+    "themes_list_title": "اختر قالب",
+    "manuscript_options_title": "خيارات الرمز",
+    "manuscript_list_title": "اختر الرمز",
+    "select_message_title": "اختر رسالة",
+    "custom_message_title": "أو ادخل رسالتك الخاصة",
+    "message_label": "رسالتك",
+    "download_card": "تنزيل البطاقة"
+}

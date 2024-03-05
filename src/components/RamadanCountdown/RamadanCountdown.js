@@ -1,10 +1,12 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 import TimerItem from "./TimerItem";
 import { useCountdown } from "../hooks/countdown-hook";
 import "./RamadanCountdown.css";
 
 export default function RamadanCountdown() {
+  const { t } = useTranslation();
   const [days, hours, minutes, seconds] = useCountdown("Mar 11, 2024 00:00:00");
 
   return (
@@ -20,12 +22,12 @@ export default function RamadanCountdown() {
             autoplay
           ></lottie-player>
         </div> */}
-        <h1 className="time-left__title">Time left until ramadan 2024</h1>
+        <h1 className="time-left__title">{t("coutdown_text")}</h1>
         <div className="timer__wrapper">
-          <TimerItem time={days} title={"days"} />
-          <TimerItem time={hours} title={"hours"} />
-          <TimerItem time={minutes} title={"minutes"} />
-          <TimerItem time={seconds} title={"seconds"} />
+          <TimerItem time={days} title={t("days")} />
+          <TimerItem time={hours} title={t("hours")} />
+          <TimerItem time={minutes} title={t("minutes")} />
+          <TimerItem time={seconds} title={t("seconds")} />
         </div>
       </div>
     </div>

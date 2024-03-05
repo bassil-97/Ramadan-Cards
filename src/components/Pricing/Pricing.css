@@ -10,6 +10,10 @@
   background-size: 700px 100%;
 }
 
+.pricing__wrapper .container {
+  direction: ltr;
+}
+
 @media screen and (max-width: 992px) {
   .pricing__wrapper {
     background: none;

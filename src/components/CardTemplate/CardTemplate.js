@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import { useTranslation } from "react-i18next";
 
 import html2canvas from "html2canvas";
 
@@ -12,6 +13,8 @@ import data from "../../assets/data/images.json";
 import manuscripts from "../../assets/data/manuscripts.json";
 
 export default function CardTemplate() {
+  const { t } = useTranslation();
+
   const [theme, setTheme] = useState(data[0].source);
   const [manuscript, setManuscript] = useState(manuscripts[0].source);
   const [message, setMessage] = useState();
@@ -45,7 +48,7 @@ export default function CardTemplate() {
     html2canvas(document.getElementById("card")).then((canvas) => {
       simulateDownloadImageClick(
         canvas.toDataURL("image/jpeg", 0.9),
-        "card.png"
+        `${clientName}.png`
       );
     });
   };
@@ -107,12 +110,12 @@ export default function CardTemplate() {
 
       <div className="row d-flex align-items-center justify-content-center">
         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 options-col">
-          <SectionTitle>theme options</SectionTitle>
+          <SectionTitle>{t("theme_options_title")}</SectionTitle>
           <div className="form-group">
-            <h6>select theme</h6>
+            <h6>{t("themes_list_title")}</h6>
             <div className="select-menu mt-3">
               <select
-                className="form-select w-50"
+                className="form-select w-100"
                 aria-label="Default select example"
                 onChange={selectThemeHandler}
               >
@@ -122,16 +125,16 @@ export default function CardTemplate() {
                   </option>
                 ))}
               </select>
-              <h5>or</h5>
-              <input type="file" />
+              {/* <h5>or</h5>
+              <input type="file" /> */}
             </div>
           </div>
         </div>
 
         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 options-col">
-          <SectionTitle>manuscript options</SectionTitle>
+          <SectionTitle>{t("manuscript_options_title")}</SectionTitle>
           <div className="form-group">
-            <h6>select manuscript</h6>
+            <h6>{t("manuscript_list_title")}</h6>
             <div className="select-menu mt-3">
               <select
                 className="form-select w-100"
@@ -169,7 +172,7 @@ export default function CardTemplate() {
         </div>
       </div>
       <div className="mt-5 mb-3 center">
-        <Button onClick={doCapture}>Download My Card</Button>
+        <Button onClick={doCapture}>{t("download_card")}</Button>
       </div>
     </React.Fragment>
   );

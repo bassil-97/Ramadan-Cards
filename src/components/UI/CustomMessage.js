@@ -1,15 +1,18 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 import "./CustomMessage.css";
 import SectionTitle from "./SectionTitle";
 
 export default function CustomMessage({ customMessageHandler }) {
+  const { t } = useTranslation();
+
   return (
     <React.Fragment>
-      <SectionTitle>or enter your message</SectionTitle>
+      <SectionTitle>{t("custom_message_title")}</SectionTitle>
       <div className="custom-message">
         <label htmlFor="custom-message" className="form-label">
-          Your Message
+          {t("message_label")}
         </label>
         <textarea
           className="form-control"

@@ -1,7 +1,11 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
+
 import "./Footer.css";
 
 export default function Footer() {
+  const { t } = useTranslation();
+
   return (
     <div className="footer">
       <div className="social-media">
@@ -54,7 +58,9 @@ export default function Footer() {
         </ul>
       </div>
       <div className="footer-copyrights">
-        <p>&copy; {new Date().getFullYear()} All rights reserved.</p>
+        <p>
+          &copy; {new Date().getFullYear()} {t("footer_text")}.
+        </p>
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 import "./About.css";
 
@@ -9,18 +10,15 @@ import HowToUse from "./HowToUse";
 import { Link } from "react-router-dom";
 
 export default function About() {
+  const { t } = useTranslation();
+
   return (
     <div className="about__us-wrapper">
       <div className="container">
         <div className="row">
           <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12 d-flex align-items-start justify-content-center flex-column">
-            <SectionTitle>about us</SectionTitle>
-            <p>
-              Here at <strong>Ramadan Cards</strong>, you can congratulate your
-              family, friends, and everyone you love on the occasion of the
-              arrival of the blessed month of Ramadan by creating a greeting
-              card using our templates with ease.
-            </p>
+            <SectionTitle>{t("aboutUs_title")}</SectionTitle>
+            <p>{t("aboutUs_text")}</p>
             <HowToUse />
           </div>
           <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12 d-flex align-items-center justify-content-center">
@@ -37,7 +35,7 @@ export default function About() {
         <div className="row mt-5">
           <div className="center">
             <Button>
-              <Link to="/card">Create card</Link>
+              <Link to="/card">{t("create_card_text")}</Link>
             </Button>
           </div>
         </div>

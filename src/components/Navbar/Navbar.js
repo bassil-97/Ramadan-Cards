@@ -1,10 +1,25 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 import { NavLink } from "react-router-dom";
 import NavLinks from "./NavLinks";
 import "./Navbar.css";
 
 export default function Navbar() {
+  const { t, i18n } = useTranslation();
+
+  const changeAppLanguage = () => {
+    let currentLanguage = i18n.language;
+
+    if (currentLanguage === "en") {
+      i18n.changeLanguage("ar");
+      document.body.dir = "rtl";
+    } else {
+      i18n.changeLanguage("en");
+      document.body.dir = "ltr";
+    }
+  };
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light">
       <div className="container-fluid">
@@ -25,6 +40,9 @@ export default function Navbar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           {<NavLinks />}
         </div>
+        <button className="btn" onClick={changeAppLanguage}>
+          {i18n.language === "en" ? "Arabic" : "English"}
+        </button>
       </div>
     </nav>
   );
